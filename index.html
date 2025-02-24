@@ -1,25 +1,77 @@
-<div class="flex flex-wrap gap-4 mt-6">
-    <a href="https://streamyard.com/broadcasts" 
-       target="_blank"
-       class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
-        🎥 WEB PARA EN VIVO
-    </a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de En Vivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 0; /* Sin bordes redondeados */
+            transition: transform 0.2s ease-in-out;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        .btn-live { background-color: #007bff; } /* Azul */
+        .btn-participants { background-color: #28a745; } /* Verde */
+        .btn-raffle { background-color: #ff5733; } /* Naranja */
+        .btn-presentation { background-color: #6f42c1; } /* Morado */
+    </style>
+</head>
+<body>
 
-    <a href="https://docs.google.com/spreadsheets/d/1rKGFoOHAbN2LlJhQcvIjvD3X9xd2At0TnFTbEJXIuoQ/edit?gid=502126520#gid=502126520" 
-       target="_blank"
-       class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg">
-        📋 LISTA DE PARTICIPANTES
-    </a>
+    <div class="container">
+        <h2 class="text-2xl font-bold mb-4">🎥 Gestión de En Vivo</h2>
+        
+        <div class="button-container">
+            <a href="https://streamyard.com/broadcasts" target="_blank" class="button btn-live">
+                🎬 WEB PARA EN VIVO
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1rKGFoOHAbN2LlJhQcvIjvD3X9xd2At0TnFTbEJXIuoQ/edit?gid=502126520#gid=502126520" target="_blank" class="button btn-participants">
+                📋 LISTA DE PARTICIPANTES
+            </a>
+            <a href="https://app-sorteos.com/es/apps/sorteados" target="_blank" class="button btn-raffle">
+                🎲 WEB PARA SORTEO
+            </a>
+            <a href="https://www.canva.com/design/DAGS5Nk1Bm4/WN701HFFt9Y9YlXZar2AFA/edit?utm_content=DAGS5Nk1Bm4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="button btn-presentation">
+                📽️ PRESENTACIÓN
+            </a>
+        </div>
+    </div>
 
-    <a href="https://app-sorteos.com/es/apps/sorteados" 
-       target="_blank"
-       class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg">
-        🎲 WEB PARA SORTEO
-    </a>
-
-    <a href="https://www.canva.com/design/DAGS5Nk1Bm4/WN701HFFt9Y9YlXZar2AFA/edit?utm_content=DAGS5Nk1Bm4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
-       target="_blank"
-       class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg">
-        📽️ PRESENTACIÓN
-    </a>
-</div>
+</body>
+</html>
